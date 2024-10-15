@@ -1,0 +1,34 @@
+***ArrayMethods***
+
+const arr = ["apple",90,{name:"abhi"},["hello"]]; // create array
+
+//Find lenght of array
+console.log(arr.length); 
+
+// Find index of array
+
+console.log(arr[2].name);  
+
+//Using at for negative values index
+console.log(arr.at(-2).name)
+
+//push used to add data in array
+console.log(arr.push("a",{data:"car"}));
+console.log(arr)
+
+//pop method to remove values from array
+
+console.log(arr.pop())
+console.log(arr)
+
+//shift method remove first value from array
+console.log(arr.shift())
+console.log
+
+//unshift method add values in begining
+console.log(arr.unshift('20','30'))
+console.log(arr)
+
+//include method used for value containes or not return bool
+console.log(arr.includes('20'))
+

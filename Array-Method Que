@@ -1,0 +1,86 @@
+Task 1 :-
+
+const numbers =[1,2,3,4,5,6,7,8,9]
+
+let result = numbers.filter(num => num % 2 !==0)
+.map(num => num*2);
+
+console.log(result);
+
+Task 2 :-
+
+const words = ["I", "love", "JavaScript", "and", "React"];
+
+let res = words.join(" ");
+
+console.log(res);
+
+Task 4:-
+
+const nums = [10, 5, 20, 15, 3];
+
+
+function sortingDec(arr){
+    return nums.sort((a,b) => b -a);
+}
+let res = sortingDec(nums);
+
+
+console.log(res);
+
+Task 5:-
+
+const mixedNumbers = [1, -2, 3, 4, 5];
+
+
+function checkPositive(arr){
+    return arr.every(num => num >0);
+}
+let res = checkPositive(mixedNumbers);
+
+
+console.log(res);
+
+Task 6:-
+
+const arr = [[1, 2], [3, 4], [5, 6]];
+
+function flattenArray(arr){
+    return arr.flat().map(num => num*2);
+}
+let res = flattenArray(arr);
+
+
+console.log(res);
+
+Task 7:-
+
+const arr = ["John", "Sarah", "Paul", "Sam"];
+
+function flattenArray(arr){
+    return arr.findIndex(name => name.startsWith('S'));
+}
+let res = flattenArray(arr);
+
+
+console.log(res);
+
+Task 8:-
+
+const products = [
+  { name: "Shirt", price: 20, quantity: 2 },
+  { name: "Pants", price: 50, quantity: 1 },
+  { name: "Shoes", price: 100, quantity: 3 }
+];
+
+
+function calculateValues(products){
+    return products.reduce((total,product) => {
+        return total + (product.price * product.quantity);
+    },0);
+}
+
+
+let res = calculateValues(products);
+
+console.log(res);

@@ -80,7 +80,101 @@ function calculateValues(products){
     },0);
 }
 
-
 let res = calculateValues(products);
 
 console.log(res);
+
+
+Task 9:-
+
+const fruits = ["apple", "banana", "orange", "grape", "pineapple"];
+
+function getSubArray(arr, start, end) {
+  return arr.slice(start, end);
+}
+console.log(getSubArray(fruits, 1, 4));
+
+Task 10:-
+
+const animals = ["dog", "cat", "elephant", "tiger"];
+
+function getSubArray(arr, item) {
+  return arr.indexOf(item);
+}
+console.log(getSubArray(animals, "cat"));
+
+Task 11:-
+
+const users = [
+  { name: "Tom", age: 16 },
+  { name: "Anna", age: 22 },
+  { name: "Lucy", age: 19 },
+  { name: "Mark", age: 17 }
+];
+
+function getSubArray(users) {
+  return users.filter(user => user.age>18);
+}
+console.log(getSubArray(users));
+
+Task 12:-
+
+const names = ["Alice", "Bob", "Charlie"];
+
+
+function objectCovert(names){
+    return names.map(name => ({name}))
+}
+
+console.log(objectCovert(names));
+
+Task 13:-
+
+const products = [
+  { id: 1, name: "Pen", price: 5 },
+  { id: 2, name: "Notebook", price: 15 },
+  { id: 3, name: "Bag", price: 150 },
+  { id: 4, name: "Laptop", price: 1000 }
+];
+
+
+
+function objectCovert(products){
+    return products.find(product => product.price > 100)
+}
+
+console.log(objectCovert(products));
+
+Task 14:-
+
+const items = ["one", "two", "three", "four"];
+
+
+function objectCovert(arr){
+    const joinedString = arr.join(',');
+    const splitString = joinedString.split(',');
+    return {joinedString,splitString};
+    
+}
+const result = objectCovert(items);
+
+console.log(result.joinedString);
+console.log(result.splitString);
+
+Task 15:-
+
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+
+
+function objectCovert(arr1,arr2){
+    const concatString = arr1.concat(arr2);
+    const mergedString = [...arr1,...arr2];
+    return {concatString,mergedString};
+    
+}
+const result = objectCovert(arr1,arr2);
+
+console.log(result.concatString);
+console.log(result.mergedString);
+
